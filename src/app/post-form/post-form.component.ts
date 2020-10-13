@@ -9,8 +9,10 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 export class PostFormComponent implements OnInit {
 
   @Output() submitted = new EventEmitter<Post>();
+
   title :string;
   thought :string;
+  
   isHidden = true;
 
   constructor() { }
@@ -19,10 +21,13 @@ export class PostFormComponent implements OnInit {
   }
 
   postThought = function(){
+
     let postThought: Post = {title: this.title, thought: this.thought};
     this.submitted.emit(postThought);
+
     this.title = "";
     this.thought = "";
+    
   }
 
   SwitchHidden = function(){

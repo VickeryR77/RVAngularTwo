@@ -1,18 +1,53 @@
+
+
+div.adjustOne{
+    position: relative;
+    left:3px;
+    bottom:10px;
+}
+
+div.adjustTwo{
+    position: relative;
+    left:3px;
+    bottom:30px;
+}
+
 div.post{
-    width:40%;
-    height:150px;
-    border:2px solid black;
+  border:solid 2px black;
+  color:white;
+  width:40%;
+  position: relative;
+  left:30%;
+  border-radius: 16px;
+  background:linear-gradient(270deg, rgb(29, 107, 94),rgb(38, 81, 109));
+  height:150px;
 }
 
 button.delete{
-    position: relative;
-    left:540px;
-    bottom:160px;
+  position: relative;
+  left:540px;
+  bottom:160px;
+  border:groove;
+  border-radius: 16px;
+  background-color: rgb(160, 176, 180);
+}
+
+input.title{
+  position: relative;
+  left:5px;
+  bottom:20px;
+  border:groove;
+  border-radius: 16px;
+  background-color: rgb(160, 176, 180);
 }
 
 input.thoughts{
-    position: relative;
-    width:90%;
-    bottom:15px;
-    
+  position: relative;
+  left:5px;
+  border:groove;
+  border-radius: 16px;
+  background-color: rgb(160, 176, 180);
+  width:90%;
+  height:40px;
+  bottom:45px;
 }

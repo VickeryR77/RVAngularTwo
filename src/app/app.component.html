@@ -1,8 +1,12 @@
 
 
 <br/>
+<!--ForLoop List-->
 <div *ngFor="let post of posts index as i">
+
+<!--app-post listening for deleted event-->
 <app-post [post]="post" (deleted)="postDelete($event)"></app-post>&nbsp;<br/>
 </div>
 
+<!--app-post-form listening for submitted event-->
 <app-post-form (submitted)="postSubmit($event)"></app-post-form>

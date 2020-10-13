@@ -1,21 +1,28 @@
 
 
+<!--Hidden until button is pressed-->
 <div [ngClass]="{hidden:isHidden}">
+  <div class="postNewThought">
   <h1>
-      Title
-    </h1><br/>
+      Title:
+    </h1>
+    <br/>
     
-    <input [(ngModel)]="title" id="text"><br/>
+    <input class="inputForm" [(ngModel)]="title" id="text"><br/>
 
     <h2>
-        Post:
-    </h2><br/>
+      Thought:
+    </h2>
+    <br/>
 
-  <input [(ngModel)]="thought" id="text"><br/>
+  <input class="inputForm" [(ngModel)]="thought" id="text"><br/>
 
-<br/><br/>
+   <br/>
+   <br/>
 
-  <button (click)="postThought()">Submit</button>
+   <!--Holy discovery batman! You can run two click events on the same button apparently.-->
+  <button class="thoughtful" (click)="postThought()" (click)="SwitchHidden()">Submit</button>
+  </div>
 </div>
 
-<button (click)="SwitchHidden()">New Thought</button>
+<button class="newThought" (click)="SwitchHidden()">New Thought</button>

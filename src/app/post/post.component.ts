@@ -7,7 +7,10 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class PostComponent implements OnInit {
 
+  //Pulls in post from parent
   @Input() post: Post;
+
+  //Emits deleted to parent
   @Output() deleted = new EventEmitter<Post>();
 
   constructor() { }
@@ -15,11 +18,13 @@ export class PostComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  //Deletes
   postDelete = function() {
     this.deleted.emit(this.post)
   }
 }
 
+//Import didn't work well. Get clarity??
 interface Post {
   title: string,
   thought: string
