@@ -1,0 +1,6 @@
+<div class="post">
+    <h3>Title:</h3><input class="title" [ngModel]="post.title" />
+    <h3>Thoughts:</h3><input class="thoughts" [(ngModel)]="post.thought" />
+
+    <button class="delete" (click)="postDelete()">Delete</button>&nbsp;<br><br>
+  </div>

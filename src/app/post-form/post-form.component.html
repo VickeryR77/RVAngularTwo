@@ -1,0 +1,21 @@
+
+
+<div [ngClass]="{hidden:isHidden}">
+  <h1>
+      Title
+    </h1><br/>
+    
+    <input [(ngModel)]="title" id="text"><br/>
+
+    <h2>
+        Post:
+    </h2><br/>
+
+  <input [(ngModel)]="thought" id="text"><br/>
+
+<br/><br/>
+
+  <button (click)="postThought()">Submit</button>
+</div>
+
+<button (click)="SwitchHidden()">New Thought</button>

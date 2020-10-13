@@ -1,0 +1,18 @@
+div.post{
+    width:40%;
+    height:150px;
+    border:2px solid black;
+}
+
+button.delete{
+    position: relative;
+    left:540px;
+    bottom:160px;
+}
+
+input.thoughts{
+    position: relative;
+    width:90%;
+    bottom:15px;
+    
+}
